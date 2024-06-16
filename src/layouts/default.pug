@@ -1,0 +1,15 @@
+doctype html
+
+include ./modules.pug
+
+html( lang="pt-br" )
+	head
+		meta( charset='utf-8' )
+		title Micro Boilerplate
+		link( href="../../shared/application/base.css" type="text/css" rel="stylesheet" )
+		script( type="module" src="../../shared/application/main.ts" )
+		block head
+
+	body
+		x-application.flex.min-h-screen.justify-center.items-center.flex-col
+			block content
